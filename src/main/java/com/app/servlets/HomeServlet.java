@@ -1,4 +1,4 @@
-package com.app.bev4sports.servlets;
+package com.app.servlets;
 
 import java.io.IOException;
 import java.sql.Connection;
@@ -9,7 +9,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import com.app.bev4sports.dao.DBConnection;
+import com.app.dao.DBConnection;
 
 public class HomeServlet extends HttpServlet {
 	

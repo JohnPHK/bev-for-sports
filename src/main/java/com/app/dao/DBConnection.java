@@ -1,4 +1,4 @@
-package com.app.bev4sports.dao;
+package com.app.dao;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

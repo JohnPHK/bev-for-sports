@@ -32,13 +32,13 @@ FOREIGN KEY (user_name) REFERENCES users(username));
 insert into users values('admin','admin','admin','admin',23,'gym');
 insert into users values('admin1','admin1','admin1','admin1',32,'Playing a sport');
 
-insert into orders values(1,"bev_blueberry","images/bev_blueberry.jpg",'2017-03-07','admin');
-insert into orders values(2,"bev_lemon","images/bev_lemon.jpg",'2017-06-01','admin');
-insert into orders values(3,"bev_orange","images/bev_orange.jpg",'2017-10-23','admin');
-insert into orders values(4,"bev_raspberry","images/bev_raspberry.jpg",'2016-12-02','admin');
-insert into orders values(5,"bev_raspberry","images/bev_raspberry.jpg",'2015-07-15','admin');
+insert into orders values(1,"bev_blueberry","images/products/bev_blueberry.jpg",'2017-03-07','admin');
+insert into orders values(2,"bev_lemon","images/products/bev_lemon.jpg",'2017-06-01','admin');
+insert into orders values(3,"bev_orange","images/products/bev_orange.jpg",'2017-10-23','admin');
+insert into orders values(4,"bev_raspberry","images/products/bev_raspberry.jpg",'2016-12-02','admin');
+insert into orders values(5,"bev_raspberry","images/products/bev_raspberry.jpg",'2015-07-15','admin');
  
-insert into products values(1,"bev_blueberry","images/bev_blueberry.jpg");
-insert into products values(2,"bev_lemon","images/bev_lemon.jpg");
-insert into products values(3,"bev_orange","images/bev_orange.jpg");
-insert into products values(4,"bev_raspberry","images/bev_raspberry.jpg");
+insert into products values(1,"bev_blueberry","images/products/bev_blueberry.jpg");
+insert into products values(2,"bev_lemon","images/products/bev_lemon.jpg");
+insert into products values(3,"bev_orange","images/products/bev_orange.jpg");
+insert into products values(4,"bev_raspberry","images/products/bev_raspberry.jpg");

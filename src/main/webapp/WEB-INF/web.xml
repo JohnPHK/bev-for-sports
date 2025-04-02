@@ -7,12 +7,26 @@
 
 	<servlet>
 		<servlet-name>HomeServlet</servlet-name>
-		<servlet-class>com.app.bev4sports.servlets.HomeServlet</servlet-class>
+		<servlet-class>com.app.servlets.HomeServlet</servlet-class>
 	</servlet>
 
 	<servlet-mapping>
 		<servlet-name>HomeServlet</servlet-name>
 		<url-pattern>/home</url-pattern>
 	</servlet-mapping>
+
+	<filter>
+		<filter-name>AuthenticationFilter</filter-name>
+		<filter-class>com.app.filters.AuthenticationFilter</filter-class>
+	</filter>
+
+	<filter-mapping>
+		<filter-name>AuthenticationFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+
+	<listener>
+		<listener-class>com.app.listeners.ApplicationListener</listener-class>
+	</listener>
 
 </web-app>

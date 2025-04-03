@@ -46,7 +46,6 @@
 			Iterator<Product> iterator = products.iterator();
 			while (iterator.hasNext()) {
 				Product product = iterator.next();
-				System.out.println(product.getProductImgPath());
 			%>
 			<form action="addProducts" method="get">
 

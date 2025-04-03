@@ -6,6 +6,7 @@ import java.util.Map;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
@@ -13,12 +14,11 @@ import com.app.beans.User;
 import com.app.dao.ApplicationDao;
 
 @WebServlet("/getProfileDetails")
-public class ViewProfileServlet {
+public class ViewProfileServlet extends HttpServlet {
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		// get the username from the session
-		System.out.println("User name in profile servlet  :" + request.getSession().getAttribute("username"));
 		String username = (String) request.getSession().getAttribute("username");
 
 		// call dao and get profile details

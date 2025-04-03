@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<taglib version="2.1" 
+        xmlns="https://java.sun.com/xml/ns/javaee"
+        xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+                            http://java.sun.com/xml/ns/javaee/web-jsptaglibrary_2_1.xsd">
+
+    <tlib-version>1.0</tlib-version>
+    <jsp-version>2.1</jsp-version>
+    <short-name>app tag handler</short-name>
+    <description>This is the custom tag library for bev4sports</description>
+    <display-name>bev4sports tag library</display-name>
+    <uri>http://www.bev4sports.com/apptags</uri>
+
+    <tag>
+        <name>formatDate</name>
+        <tag-class>com.app.customtags.AppHandler</tag-class>
+        <attribute>
+            <name>date</name>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        <attribute>
+            <name>format</name>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        <body-content>empty</body-content>
+    </tag>
+
+</taglib>

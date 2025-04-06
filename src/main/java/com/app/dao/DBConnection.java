@@ -12,7 +12,7 @@ public class DBConnection {
 		try {
 			Class.forName("com.mysql.jdbc.Driver");
 			System.out.println("MySQL JDBC Driver Registered!");
-			
+//			connection = DriverManager.getConnection("jdbc:mysql://bev4sports-sql:3306/bev4sports", "root", "password");
 			connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/bev4sports", "root", "password");
 		}
 		

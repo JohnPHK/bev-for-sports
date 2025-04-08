@@ -91,7 +91,27 @@ For all cases, the application should run on `localhost:8080`.
 - The application will then generate an HTTP response using JSP and return <b>dynamic</b> content to the client.
 
 ## J2EE Servlets
-- 
+<p><b>HomeServlet</b> – Responsible for handling HTTP GET requests to the application's home page. It initializes a database connection during the servlet's lifecycle (<code>init</code> method), forwards requests to the <code>index.html</code> page, and ensures proper cleanup by closing the database connection in the <code>destroy</code> method.</p>
+
+<p><b>LoginServlet</b> – Handles user login functionality. It processes GET requests by forwarding users to the login page (<code>login.jsp</code>) and POST requests by validating user credentials through the <code>ApplicationDao</code>. If the credentials are valid, it sets up an HTTP session and forwards the user to the home page; otherwise, it displays an error message on the login page.</p>
+
+<p><b>LogoutServlet</b> – Handles user logout functionality by invalidating the current HTTP session to clear user data. After logging out, it forwards the user to the application's home page (<code>index.html</code>).</p>
+
+<p><b>OrderHistory</b> – Retrieves the order history for a logged-in user by fetching the username from the session and querying the database through the <code>ApplicationDao</code>. It sets the retrieved order data as a request attribute and forwards the user to the <code>home.jsp</code> page to display the order history.</p>
+
+<p><b>ProductsServlet</b> – Manages the user's shopping cart by adding selected products to the cart stored in the session. It also retrieves product search results from the database using the <code>ApplicationDao</code> and forwards the results to the <code>searchResults.jsp</code> page for display.</p>
+
+<p><b>RegisterUserServlet</b> – Handles user registration by collecting form data, populating a <code>User</code> object, and saving it to the database using the <code>ApplicationDao</code>. It provides feedback to the user about the success or failure of the registration and dynamically updates the <code>register.html</code> page with the appropriate message.</p>
+
+<p><b>SearchServlet</b> – Handles product search functionality by retrieving the search query from the user, querying the database through the <code>ApplicationDao</code>, and fetching matching products. It stores the search query in the session, sets the search results as a request attribute, and forwards the user to the <code>searchResults.jsp</code> page to display the results.</p>
+
+<p><b>ViewProfileServlet</b> – Retrieves the profile details of a logged-in user by fetching their username from the session and querying the database through the <code>ApplicationDao</code>. It also prepares additional data, such as a weight summary, sets these as request attributes, and forwards the user to the <code>profile.jsp</code> page to display the profile information.</p>
+
+
 ## Demo
 
+<img src="./assets/demo_home.png" width="700"/>
+
+
 ## Deployments
+The mysql image was built upon `mysql:8.0`. 

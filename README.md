@@ -124,19 +124,19 @@ For all cases, the application should run on `localhost:8080`.
 
 ### Entry point of the web appliaction
 
-<img src="./assets/demo_home.png" alt="Home Page Demo" width="700"/>
+<img src="./assets/demo_home.png" alt="Screenshot of the home page of the Bev For Sports application" width="700"/>
 
 ### Login Feature
 
-![Home Page Demo](./assets/demo_login.png)
+<img src="./assets/demo_login.png" alt="Screenshot of the login page of the Bev For Sports application" width="700"/>
 
 ### Search Product Feature
 
-<img src="./assets/demo_search_product.png" alt="Home Page Demo" width="700"/>
+<img src="./assets/demo_search_product.png" alt="Screenshot of the product search results page in the Bev For Sports application" width="700"/>
 
 ### Order History Feature
 
-<img src="./assets/demo_order_history.png" alt="Home Page Demo" width="700"/>
+<img src="./assets/demo_order_history.png" alt="Screenshot of the order history page showing past orders in the Bev For Sports application" width="700"/>
 
 ## Deployments
 
